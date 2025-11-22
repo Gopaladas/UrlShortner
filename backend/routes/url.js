@@ -9,11 +9,12 @@ import {
 } from "../controller/url.js";
 
 const urlRouter = express.Router();
+urlRouter.get("/healthz", healthz);
+urlRouter.get("/", getLinks);
+urlRouter.get("/code/:code", getData);
 
 urlRouter.post("/", add);
-urlRouter.get("/:code", redirect);
 urlRouter.delete("/:code", deleteUrl);
-urlRouter.get("/code/:code", getData);
-urlRouter.get("/", getLinks);
-urlRouter.get("/healthz", healthz);
+urlRouter.get("/:code", redirect);
+
 export default urlRouter;
