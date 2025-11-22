@@ -89,7 +89,9 @@ const getLinks = async (req, res) => {
       .status(200)
       .json({ data: data, message: "data fetched successfully" });
   } catch (error) {
-    return res.status(500).json({ message: "Internal server error" });
+    return res
+      .status(500)
+      .json({ message: "Internal server error in getLinks" });
   }
 };
 
