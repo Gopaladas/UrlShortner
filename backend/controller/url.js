@@ -15,7 +15,7 @@ const add = async (req, res) => {
     if (urlExist) return res.json({ message: "Url already exist" });
 
     const shortId = shortid.generate();
-    const fullUrl = "http://localhost:3000" + "/" + shortId;
+    const fullUrl = "https://urlshortner-silk-seven.vercel.app" + "/" + shortId;
     const urlData = await urlModel.create({
       shortid: shortId,
       redirectUrl: url,
