@@ -16,9 +16,9 @@ import connectDB from "./config/mongoDB.js";
 import urlRouter from "./routes/url.js";
 connectDB(process.env.MONGO_URI);
 
-app.get("/", (req, res) => {
-  res.json({ message: "Hello world" });
-});
+//app.get("/", (req, res) => {
+  //res.json({ message: "Hello world" });
+//});
 
 app.use("/", urlRouter);
 
