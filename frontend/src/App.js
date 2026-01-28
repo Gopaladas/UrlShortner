@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./pages/Navbar";
 import DashBoard from "./pages/DashBoard/DashBoard";
 import Stats from "./pages/Stats/Stats";
 const App = () => {
