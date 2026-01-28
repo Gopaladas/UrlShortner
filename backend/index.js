@@ -12,6 +12,7 @@ app.use(
   })
 );
 
+
 import connectDB from "./config/mongoDB.js";
 import urlRouter from "./routes/url.js";
 connectDB(process.env.MONGO_URI);
